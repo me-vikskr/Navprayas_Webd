@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    
+    <script> 
+        tune=document.getElementById('A');
+        function playAudio(value) {
+            switch(value){
+                case A: 
+                    tune=document.getElementById('A');
+                    tune.play();
+                case B: 
+                    tune=document.getElementById('B');
+                    tune.play();
+                case C: 
+                    tune=document.getElementById('C');
+                    tune.play();
+                case D: 
+                    tune=document.getElementById('D');
+                    tune.play();
+                case E: 
+                    tune=document.getElementById('E');
+                    tune.play();
+                case F: 
+                    tune=document.getElementById('F');
+                    tune.play();
+                case G: 
+                    tune=document.getElementById('G');
+                    tune.play();
+            }
+        }
+        
+    </script> 
+    
+    <audio id="A" src="Sound/A4.mp3">
+      <source src="Sound/A4.mp3" type="audio/mp3">
+      Your browser does not support HTML5 audio.
+    </audio>
+
+    <audio id="B" src="Sound/B4.mp3">
+        <source src="Sound/B4.mp3" type="audio/mp3">
+        Your browser does not support HTML5 audio.
+    </audio>
+
+    <audio id="C" src="Sound/C4.mp3">
+        <source src="Sound/C4.mp3" type="audio/mp3">
+        Your browser does not support HTML5 audio.
+    </audio>
+
+    <audio id="D" src="Sound/D4.mp3">
+        <source src="Sound/D4.mp3" type="audio/mp3">
+        Your browser does not support HTML5 audio.
+    </audio>
+
+    <audio id="E" src="Sound/E4.mp3">
+        <source src="Sound/E4.mp3" type="audio/mp3">
+        Your browser does not support HTML5 audio.
+    </audio>
+
+    <audio id="F" src="Sound/F4.mp3">
+        <source src="Sound/F4.mp3" type="audio/mp3">
+        Your browser does not support HTML5 audio.
+    </audio>
+
+    <audio id="G" src="Sound/G4.mp3">
+        <source src="Sound/G4.mp3" type="audio/mp3">
+        Your browser does not support HTML5 audio.
+    </audio>
+    
+    <div class="piano" align="center">
+        <h1>My Pinano</h1>
+        <button class="grey-key A" onclick="playAudio(A)"> A </button>
+        <button class="yellow-key B" onclick="playAudio(B)"> B </button>
+        <button class="grey-key C" onclick="playAudio(C)"> C </button>
+        <button class="yellow-key D" onclick="playAudio(D)"> D </button>
+        <button class="grey-key E" onclick="playAudio(E)"> E </button>
+        <button class="yellow-key F" onclick="playAudio(F)"> F </button>
+        <button class="grey-key G" onclick="playAudio(G)"> G </button>
+
+    </div>
+</body>
+</html>

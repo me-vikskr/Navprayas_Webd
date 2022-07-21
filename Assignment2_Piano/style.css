@@ -1,0 +1,51 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano {
+    position: relative;
+    margin-left: 4px;
+}
+
+.grey-key {
+    width: 40px;
+    height: 120px;
+    background-color: grey;
+    border: 4px solid black;
+    border-radius: 0 0 6px 6px;
+    margin-left: -4px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.yellow-key {
+    width: 40px;
+    height: 120px;
+    background-color: yellow;
+    border: 4px solid black;
+    border-radius: 0 0 6px 6px;
+    margin-left: -4px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tune{
+    text-align: center;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    
+}
