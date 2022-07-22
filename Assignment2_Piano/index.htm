@@ -9,36 +9,6 @@
 </head>
 <body>
     
-    <script> 
-        tune=document.getElementById('A');
-        function playAudio(value) {
-            switch(value){
-                case A: 
-                    tune=document.getElementById('A');
-                    tune.play();
-                case B: 
-                    tune=document.getElementById('B');
-                    tune.play();
-                case C: 
-                    tune=document.getElementById('C');
-                    tune.play();
-                case D: 
-                    tune=document.getElementById('D');
-                    tune.play();
-                case E: 
-                    tune=document.getElementById('E');
-                    tune.play();
-                case F: 
-                    tune=document.getElementById('F');
-                    tune.play();
-                case G: 
-                    tune=document.getElementById('G');
-                    tune.play();
-            }
-        }
-        
-    </script> 
-    
     <audio id="A" src="Sound/A4.mp3">
       <source src="Sound/A4.mp3" type="audio/mp3">
       Your browser does not support HTML5 audio.
@@ -85,5 +55,35 @@
         <button class="grey-key G" onclick="playAudio(G)"> G </button>
 
     </div>
+    
+    <script> 
+    tune=document.getElementById('A');
+    function playAudio(value) {
+        switch(value){
+            case A: 
+                tune=document.getElementById('A');
+                tune.play();
+            case B: 
+                tune=document.getElementById('B');
+                tune.play();
+            case C: 
+                tune=document.getElementById('C');
+                tune.play();
+            case D: 
+                tune=document.getElementById('D');
+                tune.play();
+            case E: 
+                tune=document.getElementById('E');
+                tune.play();
+            case F: 
+                tune=document.getElementById('F');
+                tune.play();
+            case G: 
+                tune=document.getElementById('G');
+                tune.play();
+        }
+    }
+        
+    </script> 
 </body>
 </html>
